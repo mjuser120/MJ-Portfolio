@@ -1,0 +1,297 @@
+/* CSS PROJECT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+} */
+:root {
+
+    --accent-color: #016599;
+
+    --accent-bg2-color: #7ecb2c;
+
+    --accent-bg1-color: #614c7b;
+
+    --accent-bg3-color: #260000;
+
+    --accent-bg4-color: #a6a6a6;
+
+    --accent-bg5-color: #38b6ff;
+
+    --accent-bg6-color: #eb202a;
+
+    --accent-bg7-color: #657398;
+}
+
+body {
+     background-color: var(--accent-bg4-color);
+}
+
+section [class^="container"] {
+    padding: 4em 2em;
+}
+
+@media screen and (min-width: 1024px) {
+    section [class^="container"] {
+        padding: 4em;
+    }
+
+    nav [class^="container"] {
+        padding: 0 4em;
+    }
+}
+
+section:not(:first-of-type){
+    text-align: center;
+}
+
+section:nth-child(2n) {
+    /* background-color: #ecf2ff; */
+    background-color: var(--accent-bg1-color);
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #016599;
+    text-decoration: none;
+}
+
+section .card, 
+.btn-outline-dark {
+    border: 2px solid #000000;
+    box-shadow: 4px 4px #000000;
+    transition: all 0.4s;
+    background-color: var(--accent-bg7-color);
+}
+
+.btn-outline-dark:hover {
+    box-shadow: 4px 4px var(--accent-bg2-color);
+}
+
+/* NAVBAR */
+.navbar-nav .nav-link {
+    color: black;
+    font-size: 1.1rem;
+    transition: all 0.5s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent-bg2-color);
+}
+
+.navbar {
+    background-color: var(--accent-bg4-color);
+    /* background-color: white; */
+}
+
+/* JUSTIFY TEXT*/
+section.hero p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* section.hero img {
+    padding: 10px;
+} */
+ 
+
+@media screen and (min-width: 1024px) {
+    .navbar-nav .nav-item {
+        padding: 0 1rem;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    
+}
+
+/* HERO */
+
+section.hero {
+    padding-top: 20px;
+}
+
+section.hero a {
+    font-size: 1.5rem;
+}
+
+section.hero .img-fluid {
+    height: 80%;
+    width: 80%;
+}
+
+section.hero .subheading {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+section.hero .list-inline {
+    padding-left: 0;
+    list-style: none;
+}
+  
+section.hero  .list-inline-item {
+    display: inline-block;
+}
+section.hero .list-inline-item:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+section.hero .logo {
+    height: 45px;
+    width: 45px;
+}
+
+@media screen and (max-width: 576px) {
+    section.hero  {
+        text-align: center;
+    }
+
+    section.hero img {
+        width: 80%;
+        padding-top: 10px;
+    }
+    
+}
+
+/* SERVICE */
+
+section.services i{
+    font-size: 2rem;
+    margin: 1rem auto 0;
+    border: 2px solid #000000;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+}
+
+
+
+section .card {
+    max-width: 30rem;
+    margin-inline: auto;
+}
+
+/* ABOUT */
+
+@media screen and (min-width: 1024px) {
+    section.about .container,
+    section.testimonials .container {
+        width: 60%;
+    }
+
+    section.about .container,
+    section.demo .container {
+        width: 60%;
+    }
+
+}
+
+/* PROJECT */
+
+section.projects .card {
+    max-width: 17rem;
+    text-align: left;
+}
+
+section.projects .card img {
+    max-width: 70%;
+    margin: 1rem auto;
+}
+
+/* TESTIMONIALS - Result */
+
+section.testimonials .carousel-control-prev, 
+.carousel-control-next {
+    width: 5%;
+}
+
+section.testimonials .carousel-item p{
+    max-width: 80%;
+    border-left: 5px solid var(--accent-color);
+    padding-left: 0.5rem;
+}
+
+section.testimonials .carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.testimonials .carousel.carousel-fade .carousel-item{
+    transition: opacity 0.5s;
+}
+
+/* CONTACT */
+
+section.contact .social-media a {
+    padding: 0 0.5rem;
+    font-size: 1.3rem;
+}   
+
+/* PLACE */
+
+section.place .card {
+    max-width: 45rem;
+    text-align: left;
+}
+
+section.place .card img{
+    width: 100%;
+    padding: 5px;
+}
+
+/* JUSTIFY TEXT*/
+section.place .card p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* RECORD PLACE */
+
+section.rd .card video {
+    width: 100%;
+    padding: 10px;
+}
+
+/* DEMO */
+
+section.demo .carousel-control-prev, 
+.carousel-control-next {
+    width: 5%;
+}
+
+section.demo .carousel-item p{
+    max-width: 80%;
+    border-left: 5px solid var(--accent-color);
+    padding-left: 0.5rem;
+}
+
+section.demo .carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.demo .carousel.carousel-fade .carousel-item{
+    transition: opacity 0.5s;
+}
+
+section.demo img {
+    max-width: 60%;
+   
+}
